@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector All</title>
+</head>
+<body>
+    <!-- <div>
+        <p class = "course">HTML</p>
+        <p class = "course">CSS</p>
+        <p class = "course">JS</p>
+        <p class = "course">BOOTSTRAP</p>
+        <p class = "course">ANGULAR</p>
+    </div>
+    <button type="button" onclick="changeColor()">Change Color</button>
+    <button type ="button" onclick = "showStudents()">Show Students</button> -->
+
+    <ul>
+        <li class="list">Rahul</li>
+        <li class="list">Ramesh</li>
+        <li class="list">Rohit</li>
+    </ul>
+    <button type="button" onclick="changeAll()">Highlight Students</button>
+    <script>
+        function changeAll(){
+            let data = document.querySelectorAll('.list');
+            data.forEach(function(item){
+                item.style.color = "red";
+                item.style.backgroundColor = "yellow";
+            })
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector</title>
+</head>
+<body>
+   <p class ="course">Java Programming</p> 
+   <p class ="course">Python Programming</p>
+   <p class ="course">Angular Framework</p>
+   <p class ="course">React Library</p>
+   <p class ="course">Flutter</p>
+
+   <button type="button" onclick="changeTitle()">Change Title</button>
+
+   <script>
+        function changeTitle(){
+           
+         // document.querySelector('.course').innerText="JavaScript Programming"; //changes only the content of the first element
+           document.querySelector('.course').style.color="red"; //changes only the content of the first element
+        }
+   </script>
+</body>
+</html>

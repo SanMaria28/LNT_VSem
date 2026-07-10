@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementbyId</title>
+</head>
+<body>
+    <h1 id="student">Welcome Student</h1>
+    <button type="button" onclick="showName()">Show button</button>
+
+    <script>
+        function showName() {
+            // document.getElementById("student").innerText ="Welcome Daisy"; //changes only the content of the existing element
+            document.getElementById("student").innerHTML ='<marquee>Welcome Daisy</marquee>';
+
+        }
+    </script>
+</body>
+</html>

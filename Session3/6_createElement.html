@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>College Notice Board</h1>
+    <div>
+        <p id="notices">No Notices</p>
+    </div>
+
+    <button type="button" onclick="addNotice()">Add Notice</button>
+    <button type = "button" onclick="removeNotice()">Remove Notice</button>
+
+    <script>
+        function addNotice(){
+            let p=document.createElement('p');
+            p.innerText = "Tomorrow JavaScript Lab Exam";
+
+            document.getElementById('notices').appendChild(p);
+
+        }
+        function removeNotice(){
+            document.getElementById('notices').remove();
+        }
+    </script>
+
+</body>
+</html>
